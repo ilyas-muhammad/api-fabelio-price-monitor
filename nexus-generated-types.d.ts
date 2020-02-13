@@ -24,7 +24,7 @@ export interface NexusGenRootTypes {
     // root type
     createdAt?: string | null; // String
     id: number; // Int!
-    productDetail: NexusGenRootTypes['ProductDetail']; // ProductDetail!
+    productDetail?: NexusGenRootTypes['ProductDetail'] | null; // ProductDetail
     url: string; // String!
   };
   ProductDetail: {
@@ -64,7 +64,7 @@ export interface NexusGenFieldTypes {
     // field return type
     createdAt: string | null; // String
     id: number; // Int!
-    productDetail: NexusGenRootTypes['ProductDetail']; // ProductDetail!
+    productDetail: NexusGenRootTypes['ProductDetail'] | null; // ProductDetail
     url: string; // String!
   };
   ProductDetail: {

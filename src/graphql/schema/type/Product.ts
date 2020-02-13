@@ -7,7 +7,7 @@ export const Product = objectType({
         t.int('id');
         t.string('url');
         t.string('createdAt', { nullable: true });
-        t.field('productDetail', { type: ProductDetail });
+        t.field('productDetail', { type: ProductDetail, nullable: true });
     }
 })
 export const ProductSummary = objectType({
