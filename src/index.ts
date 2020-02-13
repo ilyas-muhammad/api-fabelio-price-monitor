@@ -22,9 +22,9 @@ const port = getValidatedNumericConfig('APP_PORT');
 
 app.listen(
   {
-    port,
+    port: process.env.APP_PORT,
   },
   () => {
-    log('info', `Server is running on PORT: ${port}`);
+    log('info', `Server is running on PORT: ${process.env.APP_PORT}`);
   },
 );
