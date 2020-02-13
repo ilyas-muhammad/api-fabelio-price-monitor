@@ -10,6 +10,7 @@ app.use(cors({ origin: '*' }));
 app.use(bodyParser.json({ limit: '6mb' }));
 app.use(bodyParser.urlencoded({ limit: '6mb', extended: true }));
 app.use('/ping', (req, res) => res.send('pong'));
+app.set('port', (process.env.PORT || 5000));
 
 const server = getServer();
 
@@ -21,10 +22,8 @@ server.applyMiddleware({
 const port = getValidatedNumericConfig('APP_PORT');
 
 app.listen(
-  {
-    port: process.env.APP_PORT,
-  },
+  app.get('port'),
   () => {
-    log('info', `Server is running on PORT: ${process.env.APP_PORT}`);
+    log('info', `Server is running on PORT: ${app.get('port')}`);
   },
 );
