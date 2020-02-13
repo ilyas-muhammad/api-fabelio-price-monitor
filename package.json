@@ -15,6 +15,10 @@
     "prettier-all": "prettier --write 'src/**/*.ts'",
     "lint": "eslint --fix src/**/*.ts"
   },
+  "engines": {
+    "node": ">=8.11.2",
+    "npm": "5.x"
+  },
   "dependencies": {
     "apollo-cache-inmemory": "^1.5.1",
     "apollo-client": "^2.5.1",
