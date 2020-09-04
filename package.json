@@ -41,7 +41,7 @@
     "elasticsearch": "^15.4.1",
     "graphql": "^14.2.0",
     "graphql-middleware": "^3.0.2",
-    "graphql-shield": "^5.3.1",
+    "graphql-shield": "^6.0.6",
     "graphql-tag": "^2.10.1",
     "graphql-tools": "^4.0.4",
     "graphql-upload": "^8.0.6",
