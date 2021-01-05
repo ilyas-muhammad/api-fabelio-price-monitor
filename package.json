@@ -28,7 +28,7 @@
     "apollo-server-errors": "^2.2.1",
     "apollo-server-express": "^2.4.8",
     "aws-sdk": "^2.463.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bcryptjs": "^2.4.3",
     "bluebird": "^3.5.4",
     "body-parser": "^1.18.3",
