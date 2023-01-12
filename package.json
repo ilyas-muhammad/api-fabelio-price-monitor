@@ -33,7 +33,7 @@
     "bluebird": "^3.5.4",
     "body-parser": "^1.18.3",
     "cheerio": "^1.0.0-rc.3",
-    "class-validator": "^0.9.1",
+    "class-validator": "^0.14.0",
     "copyfiles": "^2.1.0",
     "cors": "^2.8.5",
     "date-fns": "^2.6.0",
